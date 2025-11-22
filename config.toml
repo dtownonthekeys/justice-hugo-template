@@ -8,28 +8,37 @@ PaginatePath = "/"
 enableRobotsTXT = true
 
 [taxonomies]
-  category = "categories"
+category = "categories"
 
 [markup.goldmark.renderer]
-  unsafe = true # Allows HTML <img> tags inside Markdown content
+unsafe = true
 
 [permalinks]
-  posts = ":section/:year/:month/:day/:title/"
+posts = ":section/:year/:month/:day/:title/"
 
 [params]
-  backgroundImagePath = "/uploads/building.jpg"
-  description = "Hugo template with example content for a law firm."
-  images = ["siteicon.png"]
-  title = "Justice Template"
+backgroundImagePath = "/uploads/Lady Justice.jpg"
+description = "Hugo template with example content for a law firm."
+images = [ "siteicon.png" ]
+title = "Justice Template"
 
-[params._selectData]
-  call_to_actions = ["Contact", "Blog", "Map"]
-  social_icons = ["Facebook", "Instagram", "LinkedIn", "Pinterest", "Tumblr", "Twitter", "YouTube", "RSS"]
+  [params._selectData]
+  call_to_actions = [ "Contact", "Blog", "Map" ]
+  social_icons = [
+  "Facebook",
+  "Instagram",
+  "LinkedIn",
+  "Pinterest",
+  "Tumblr",
+  "Twitter",
+  "YouTube",
+  "RSS"
+]
 
 [params._options.type]
-  hidden = true
+hidden = true
 
-[params._comments]
+  [params._comments]
   large_header = "Toggles the size of the top banner."
   show_in_navigation = "Toggles a link in the top banner."
   author_staff_member = "The staff member writing this post."
